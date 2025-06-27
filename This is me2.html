@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Guy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=1280&q=80') no-repeat center center;
+      background-size: cover;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 100px;
+      padding: 20px;
+    }
+
+    .text {
+      font-size: 90px;
+      font-weight: bold;
+      text-shadow: 0 0 10px white;
+    }
+
+    .photo img {
+      width: 400px;
+      border-radius: 0 0 50% 0;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+	nav a.active {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="active">HOME</a>
+    <a href="a1.html">ABOUT</a>
+    <a href="a2.html">HISTORY</a>
+    <a href="a3.html">CONTACT</a>
+    <a href="a4.html">PICTURE</a>
+  </nav>
+
+  <div class="content">
+    <div class="text">
+      HELLO GUY!<br>
+		THIS IS ME
+    </div>
+    <div class="photo">
+      <img src="p1.jpg" alt="My photo">
+    </div>
+  </div>
+
+</body>
+</html>

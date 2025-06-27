@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Picture Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Arial+Rounded+MT+Bold&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+     background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=1280&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+    }
+	nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ccc;
+    }
+
+    nav a.active {
+      color: red;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px;
+	  margin: 150px;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .button-container {
+      margin-top: 180px;
+    }
+
+    .continue-button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background: linear-gradient(45deg, #ff00cc, #3333ff);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .continue-button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="This is me2.html">HOME</a>
+    <a href="a1.html">ABOUT</a>
+    <a href="a2.html">HISTORY</a>
+    <a href="a3.html">CONTACT</a>
+    <a href="#" class="active">PICTURE</a>
+  </nav>
+
+  <div class="gallery">
+    <img src="p7.jpg" alt="Photo 1">
+    <img src="p8.jpg" alt="Photo 2">
+    <img src="p11.jpg" alt="Photo 3">
+    <img src="p9.jpg" alt="Photo 4">
+    <img src="p10.jpg" alt="Photo 5">
+  </div>
+
+  <div class="button-container">
+    <a href="a5.html" ><button class="continue-button">CONTINUE TO.......!!!!</button>
+  </div>
+
+</body>
+</html>
